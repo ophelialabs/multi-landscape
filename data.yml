@@ -630,6 +630,12 @@ landscape:
         name: Julia Notebooks
         items:
           - item:
+            description: Free hosting for Pluto notebooks
+            homepage_url: https://pluto.land
+            logo: pluto.svg
+            name: Pluto.land
+            project: graduated
+          - item:
             description: Reactive notebooks for Julia
             homepage_url: https://plutojl.org/en/docs/plutopages/
             logo: pluto.svg
@@ -1736,6 +1742,10 @@ landscape:
 
       - name: AI/ML Services
         items:
+          - name: Amazon Bedrock
+            description: "A fully managed, serverless cloud service on Amazon Web Services (AWS) that lets you build and scale generative artificial intelligence applications. [1](https://aws.amazon.com/bedrock/), [2](https://en.wikipedia.org/wiki/Amazon_Bedrock), [3](https://www.youtube.com/watch?v=PA2uFrZxong)"
+            homepage_url: https://aws.amazon.com/bedrock/
+            logo: logos/cncf.svg
           - name: Amazon SageMaker
             description: Build, train, and deploy machine learning models
             homepage_url: https://aws.amazon.com/sagemaker/

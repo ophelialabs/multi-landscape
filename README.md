@@ -1,5 +1,3 @@
-- add [pluto.land](https://pluto.land) for free pluto notebooks hosting
-
 Real-time file scanning at enterprise scale.
 
 # Framework Landscape
