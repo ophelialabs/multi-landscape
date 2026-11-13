@@ -149,6 +149,7 @@
 [pkg](https://pkgdocs.julialang.org) | graduated |  |  |  |  |  | 0 |  |
 [plots.jl](https://docs.juliaplots.org) | graduated |  |  |  |  |  | 0 |  |
 [pluto.jl](https://plutojl.org/en/docs/plutopages/) | graduated |  |  |  |  |  | 0 |  |
+[pluto.land](https://pluto.land) | graduated |  |  |  |  |  | 0 |  |
 [poetry](https://python-poetry.org) | graduated |  |  |  |  |  | 0 |  |
 [power bi](https://powerbi.microsoft.com) | graduated |  |  |  |  |  | 0 |  |
 [psi4](https://psicode.org) | graduated |  |  |  |  |  | 0 |  |
