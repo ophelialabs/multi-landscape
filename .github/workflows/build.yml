@@ -9,6 +9,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: landscape-build
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on:
@@ -37,12 +41,18 @@ jobs:
           git config --global safe.directory `pwd`
           git config --global user.name "GitHub Actions"
           git config --global user.email "no-reply@sample-domain.io"
-          git checkout -b build || git checkout build
-          git branch --set-upstream-to=origin/build build || git push -u origin build
-          git pull origin build || true
-          rm -rf *
-          cp -R /tmp/landscape/* .
+          if git fetch --quiet origin refs/heads/build:refs/remotes/origin/build; then
+            git checkout -B build origin/build
+          else
+            git checkout -b build
+          fi
+          git rm -rf .
+          cp -R /tmp/landscape/. .
           cp index.html 404.html
-          git add .
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Generated landscape is unchanged"
+            exit 0
+          fi
           git commit -m "Build landscape"
           git push origin build
