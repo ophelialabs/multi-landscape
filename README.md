@@ -1,5 +1,3 @@
-Real-time file scanning at enterprise scale.
-
 # Framework Landscape
 
 This project uses the Landscape2 toolchain to render a local static site from the YAML configuration files.
